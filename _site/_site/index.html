@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Frank Trani's Portfolio</title>
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="/assets/js/script.js"></script>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+</head>
+
+<body>
+  <header>
+    <span>Frank Trani</span>
+
+    <div class="nav-wrapper">
+      <button class="switch-theme" id="switch-theme-btn">
+      </button>
+      <nav class="top-nav">
+        <ul>
+          <li>
+            <a href="index.html" class="nav-button active">Home</a>
+          </li>
+          <li>
+            <a href="links.html" class="nav-button">Links</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="intro">
+      <h1 class="title">Hi, I'm Frank Trani 👋</h1>
+      <h2 class="subtitle">
+        A Programmer & Cybersecurity Enthusiast.
+      </h2>
+      <p class="tagline">
+        I am <span id="age"></span> years old and have been
+        programming for <span id="yearsProgramming"></span> years. I enjoy
+        Cybersecurity, robotics, and backend development. I have been
+        programming for <span id="yearsProgramming"></span> years.
+      </p>
+
+
+      <div class="wrap">
+        <button id="contactBtn" class="btn">Contact Me</button>
+      </div>
+    </section>
+
+    <!-- The Modal -->
+    <div id="contactModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Contact Me</h2>
+        <form action="https://formspree.io/f/mgejyqzk" method="post">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="_replyto" required />
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+
+          <!-- Optional: customize the email subject -->
+          <input type="hidden" name="_subject" value="New contact from portfolio" />
+
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+    </div>
+
+    <section class="languages">
+      <h2>My Tech Stack</h2>
+
+      <h3>Programming Languages</h3>
+      <div class="skill-category">
+        <div class="skill-box">Python</div>
+        <div class="skill-box">Javascript</div>
+        <div class="skill-box">HTML</div>
+        <div class="skill-box">CSS</div>
+        <div class="skill-box">C</div>
+      </div>
+
+      <h3>Databases</h3>
+      <div class="skill-category">
+        <div class="skill-box">MySQL</div>
+        <div class="skill-box">MongoDB</div>
+      </div>
+
+      <h3>Frameworks</h3>
+      <div class="skill-category">
+        <div class="skill-box">Flask</div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    var modal = document.getElementById("contactModal");
+    var btn = document.getElementById("contactBtn");
+    var span = document.getElementsByClassName("close")[0];
+
+    btn.onclick = function () {
+      modal.style.display = "block";
+    };
+
+    span.onclick = function () {
+      modal.style.display = "none";
+    };
+
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    };
+  </script>
+
+  <main class="container">
+    <section class="projects">
+      <h1>My Projects</h1>
+      <ul class="project-list">
+        <li>
+          <a href="https://github.com/yourusername/project1" target="_blank">1</a>
+        </li>
+        <li>
+          <a href="https://github.com/yourusername/project2" target="_blank">2</a>
+        </li>
+        <li>
+          <a href="https://github.com/yourusername/project2" target="_blank">3</a>
+        </li>
+        <li>
+          <a href="https://github.com/yourusername/project2" target="_blank">4</a>
+        </li>
+        <li>
+          <a href="https://github.com/yourusername/project2" target="_blank">5</a>
+        </li>
+        <li>
+          <a href="https://github.com/yourusername/project2" target="_blank">6</a>
+        </li>
+        <li>
+          <a href="https://github.com/yourusername/project2" target="_blank">7</a>
+        </li>
+        <li>
+          <a href="https://github.com/yourusername/project2" target="_blank">8</a>
+        </li>
+        <li>
+          <a href="https://github.com/yourusername/project2" target="_blank">9</a>
+        </li>
+        <li>
+          <a href="https://github.com/yourusername/project2" target="_blank">10</a>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <div class="footer-container">
+    <footer>
+      <f1>Made by Frank Trani.</f1>
+      <f2>Big Thanks to <a href="https://github.com/ntenebruso" id="thanks">Nick Tenebruso</a> for help with CSS
+      </f2>
+    </footer>
+  </div>
+
+</body>
+
+</html>
