@@ -96,6 +96,7 @@ header span {
     width: 90%;
     max-width: 1100px;
     margin: 0 auto;
+    margin-bottom: 100px;
 }
 
 .intro {
@@ -115,7 +116,7 @@ header span {
 }
 
 .intro .tagline {
-    margin-bottom: 40px;
+    margin-bottom: 5px;
 
 }
 
@@ -282,6 +283,29 @@ header span {
 }
 
 
+.footer-container {
+    text-align: center;
+}
+
+footer {
+    text-align: left;
+    left: -19%;
+    background-color: var(--bg-tint);
+    display: inline-block;
+    padding: 10px;
+    position: relative;
+    border-radius: 10px;
+    bottom: 10px;
+}
+
+footer f1 {
+    color: var(--text-color);
+}
+
+footer f2,
+footer #thanks {
+    color: var(--text-color-secondary);
+}
 
 
 
@@ -303,6 +327,8 @@ header span {
     outline: none;
     position: relative;
     padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
 }
 
 #contactBtn::before {
@@ -353,16 +379,17 @@ header span {
 
 @keyframes ring {
     0% {
-      width: 10px;
-      height: 10px;
-      opacity: 1;
+        width: 10px;
+        height: 10px;
+        opacity: 1;
     }
+
     100% {
-      width: 200px;
-      height: 200px;
-      opacity: 0;
+        width: 200px;
+        height: 200px;
+        opacity: 0;
     }
-  }
+}
 
 .wrap {
     height: 100%;
@@ -375,4 +402,3 @@ html,
 body {
     height: 100%;
 }
-
