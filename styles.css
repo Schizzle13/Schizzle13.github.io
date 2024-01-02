@@ -9,7 +9,7 @@
 /* Dark theme */
 :root {
     --main-color: #0056b3;
-    --bg-color: #1f1f1f;
+    --bg-color: #2e2e2e;
     --bg-tint: #121212;
     --text-color: #fff;
     --text-color-secondary: #ccc;
@@ -25,7 +25,7 @@
 
 body {
     font-family: Poppins, sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     background-color: var(--bg-color);
     color: var(--text-color);
 }
@@ -385,20 +385,22 @@ body {
 
 footer {
     text-align: left;
-    left: -19%;
     background-color: var(--bg-tint);
-    display: inline-block;
-    padding: 10px;
+    display: flexbox;
+    padding: 5px;
     position: relative;
-    border-radius: 10px;
-    bottom: 10px;
+    border-radius: 5px;
+    bottom: 5px;
+    font-size: 10;
 }
 
 footer f1 {
     color: var(--text-color);
+    
 }
 
 footer f2,
 footer #thanks {
     color: var(--text-color-secondary);
 }
+
