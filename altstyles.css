@@ -11,8 +11,8 @@
     --main-color: #0056b3;
     --bg-color: #0d0f13;
     --bg-tint: #1b1e2a;
-    --text-color: #D3f2e7;
-    --text-color-secondary: #E3f6ef;
+    --text-color: #28d4f6;
+    --text-color-secondary: #ccc;
 }
 
 /* Light theme */
@@ -20,7 +20,7 @@
     --bg-color: #Bdf0f8;
     --bg-tint: #E6fbff;
     --text-color: #05363d;
-    --text-color-secondary: #023036;
+    --text-color-secondary: #1f1f1f;
 }
 
 body {
@@ -36,11 +36,6 @@ a {
     text-decoration: none;
 }
 
-b{
-    float: right;
-    text-decoration: underline;
-    font-weight: bold;
-}
 
 /* Navigation Bar */
 header {
@@ -296,7 +291,7 @@ header span {
     text-transform: uppercase;
     letter-spacing: 1.3px;
     font-weight: 700;
-    color: #2c232c;
+    color: #313133;
     background: linear-gradient(90deg, rgba(129, 230, 217, 1) 0%, rgba(79, 209, 197, 1) 100%);
     border: none;
     border-radius: 100px;
